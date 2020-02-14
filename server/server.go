@@ -21,8 +21,8 @@ func StartServer(httpV string, ip string, port string, tls string) {
 	var conn = ip+":"+port
 
 	// Listen to port 8080 and wait
-	http.ListenAndServeTLS(conn,"C:/Users/Nuno/go/src/github.com/nunosusanoribeiro/HTTPcompare/internal/certs/cert.pem",
-		"C:/Users/Nuno/go/src/github.com/nunosusanoribeiro/HTTPcompare/internal/certs/key.pem", nil)
+	http.ListenAndServeTLS(conn,"internal/certs/cert.pem",
+		"internal/certs/key.pem", nil)
 }
 
 

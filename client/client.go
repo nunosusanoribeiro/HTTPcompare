@@ -13,7 +13,7 @@ func StartClient(httpV string, ip string, port string, tlsV string) {
 	// Request /hello over port 8080 via the GET method
 	//r, err := http.Get("http://localhost:8080/hello")
 
-	caCert, err := ioutil.ReadFile("C:/Users/Nuno/go/src/github.com/nunosusanoribeiro/HTTPcompare/internal/certs/cert.pem")
+	caCert, err := ioutil.ReadFile("internal/certs/cert.pem")
 	if err != nil {
 		log.Fatal(err)
 	}
